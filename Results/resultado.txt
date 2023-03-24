@@ -1,0 +1,2 @@
+nome_instancia:exemplo  qtd_linhas:7  qtd_colunas:7  
+

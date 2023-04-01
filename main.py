@@ -5,8 +5,9 @@ from Methods import (traits as trait)
 # Program core
 def main(instance):
     headquarters = ds.startHeadquarters(instance)
-    print(headquarters, '\n') # '\n' insert blank space after code line
+    print(headquarters[0][1], '\n') # '\n' insert blank space after code line
     
+    print(trait.checkAdjacency(headquarters, 0,1));
     traits = trait.getTraits(headquarters); #funcao responsavel por pegar as caracteristicas da matriz
     
     
@@ -16,4 +17,4 @@ def main(instance):
 if __name__ == '__main__':
     main(str(sys.argv[1]))
 
-#python -u "c:\Users\lfsei\Downloads\Grafos\Atividade1\Meu\main.py" exemplo
+#python -u "c:\Users\lfsei\Documents\Atv1grafo\main.py" exemplo

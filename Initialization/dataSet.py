@@ -5,7 +5,7 @@ import numpy as np
 # Saída: matriz de adjacência (tipo NumPy.ndarray)
 def startHeadquarters(instance):
     print('Instance name:', instance, '\n')
-    path = 'C:/Users/lfsei/Downloads/Grafos/Atividade1/Meu/Instances/' + instance + '.txt'
+    path = 'c:/Users/lfsei/Documents/Atv1grafo/Instances/' + instance + '.txt'
     with open(path, 'rb') as f:
         data = np.genfromtxt(f, dtype="int64") #OBS. Lê arquivo .txt de uma Instancia no formato Matriz de Adjacência
     return data
@@ -21,6 +21,6 @@ def saveResults(result, instance):
         value = result[key]
         stringRes += str(key) + ':' + str(value) + '  '
     stringRes += '\n'
-    arq = open('C:/Users/lfsei/Downloads/Grafos/Atividade1/Meu/Results/resultado.txt', 'a+')
+    arq = open('c:/Users/lfsei/Documents/Atv1grafo/Results/resultado.txt', 'a+')
     arq.writelines(stringRes + '\n')
     arq.close()
